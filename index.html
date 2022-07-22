@@ -7,28 +7,55 @@
   <meta name="viewport" content="width=device-width" />
   <link rel="stylesheet" href="css/main.css" />
   <link rel="stylesheet" href="css/nav.css" />
-  <style>
+  <!-- <style>
     #play span{
         background-color: cyan; 
     }
-  </style>
+  </style> -->
  </head>
  <body>
      <header>
      <h1>DOM Play</h1>
         <nav class="topnav" id="myTopnav">
             <a href="index.html" class="active">Home</a>
-            <a href="#" target="_blank">Name of project goes here</a>
+            <a href="https://yusnguyen.github.io/portal-it115/" target="_blank">Portal Website</a>
             <a href="javascript:void(0);" class="icon" onclick="myFunction()">&#9776;</a>
         </nav>
      </header>
+
+     <h1 style="background-color:	#d6a444">What Does This Page Do?</h1>
      
    <main class="wrapper">
+    <hr>
+    
+    <h3>
+      This webpage is a working application that highlights lines within a script that is specific to the actor. The page is programmed to only highlight an actor's designated lines through the usage of data attributes within HTML. This allows for the 'span' element to be hooked onto JavaScript's querySelector method, which we can then use in as an object in a for loop. I then utilized an event listener to link to the mySpan object to highlight the lines when clicked. Give it a try, and click on one of the lines! 
+      
+    </h3>
+    <hr>
     <div id="play">
 
-    <p><span>Hamlet: To be or not to be?</span></p>
-    <p><span>Skull: Are you talking to me?</span></p>
-    <p><span>Hamlet: What did you say?</span></p>
+    <h2 style="text-align:center;">STAR TREK: THE NEXT GENERATION: "Chain of Command, Part II" </h2>
+
+   
+
+      <p><span data-actor="madred">MADRED: It's up to you. A life of ease... of reflection and intellectual challenge...</span></p>
+      <p><span data-actor="picard">PICARD: What... must I... do... ?</span></p>
+      <p><span data-actor="madred">MADRED: Nothing, really. (gestures upward) Tell me how many lights you see.</span></p>
+      <p><span data-actor="madred">MADRED: How many? How many lights? This is your last chance... the guards are coming... don't be a stubborn fool...</span></p>  
+      <p style="font-family:'Courier New'">The door opens and Gul Lemec ENTERS, accompanied by two guards. He surveys the scene.</p>
+
+      <p><span data-actor="lemec">LEMEC: You told me he would be ready to go.</span></p>
+      <p><span data-actor="madred">MADRED: We had some unfinished business.</span></p>
+      <p><span data-actor="lemec">LEMEC: Get him cleaned up. A ship is waiting to take him back to the Enterprise.</span></p>
+      <p><span data-actor="lemec">LEMEC: Captain Picard... if you will go with the guards, they'll take care of you</span></p>
+    
+      <p style="font-family:'Courier New'">Still holding Madred's look, Picard rises... starts to
+      lose his balance but holds on... takes deep breaths of
+      air... straightens himself, and walks close to Madred.
+      </p>
+
+      <p><span data-actor="picard">PICARD: THERE ARE....FOUR.. LIGHTS!!!</span></p>
 
   </div>
      <footer>
